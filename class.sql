@@ -73,12 +73,13 @@ CREATE TABLE `sign` (
   `userid` int(11) NOT NULL,
   `time` datetime NOT NULL,
   `classid` int(11) DEFAULT NULL,
+  `address` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 /*Data for the table `sign` */
 
-insert  into `sign`(`id`,`userid`,`time`,`classid`) values (1,1,'2021-04-27 18:37:22',NULL),(2,2,'2021-04-27 18:37:38',NULL),(3,3,'2021-04-27 18:37:46',NULL);
+insert  into `sign`(`id`,`userid`,`time`,`classid`,`address`) values (1,1,'2021-04-27 18:37:22',NULL,NULL),(2,2,'2021-04-27 18:37:38',NULL,NULL),(3,3,'2021-04-27 18:37:46',NULL,NULL);
 
 /*Table structure for table `user` */
 
