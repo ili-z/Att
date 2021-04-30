@@ -12,16 +12,19 @@
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, maximum-scale=1">
 <title>系统</title>
+<script src="<%=basePath %>/commot/layui/layui.js"></script>
 <link rel="stylesheet" href="<%=basePath %>/commot/layui/css/layui.css">
+<!-- treetable -->
+<script type="text/javascript" src="<%=basePath %>/commot/layui/lay-module/treetable-lay/treeTable.js"></script>
 <link rel="stylesheet" href="<%=basePath %>/commot/layui/lay-module/layui_ext/dtree/dtree.css">
+
 <link rel="stylesheet" href="<%=basePath %>/commot/layui/lay-module/layui_ext/dtree/font/dtreefont.css">
 <!-- 内容展示 -->
 <script type="text/javascript" src="<%=basePath %>/commot/jquery-1.12.4.js"></script>
 <!-- 弹窗 -->
 <script type="text/javascript" src="<%=basePath %>/commot/common.js"></script>
 
-<!-- treetable -->
-<%-- <script type="text/javascript" src="<%=basePath %>/common/js/treeTable.js"></script> --%>
+
 <style type="text/css">
 .layui-header  {
             /*  background-color: #fffffb !important; */
@@ -83,7 +86,7 @@
 		<div class="layui-body">
 			<!-- 内容主体区域 -->
 			<div id="bodydiv" style="padding: 15px;">
-			内容主体区域
+			<iframe allowtransparency="true" frameborder="0" width="800" height="600" scrolling="no" src="//tianqi.2345.com/plugin/widget/index.htm?s=2&z=3&t=0&v=0&d=3&bd=0&k=&f=&ltf=009944&htf=cc0000&q=1&e=1&a=1&c=58321&w=800&h=600&align=center"></iframe>
 			</div>
 		</div>
 
@@ -93,7 +96,7 @@
 		</div>
 	</div>
 	
-	<script src="<%=basePath %>/commot/layui/layui.js"></script>
+	
 	<script>
 		//JavaScript代码区域
 		layui.use('element', function() {

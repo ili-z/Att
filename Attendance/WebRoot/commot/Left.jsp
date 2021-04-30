@@ -11,7 +11,7 @@
 						<c:if test="${n.parentid == i.id}">
 							<dd>
 								<a href="javascript:;" id="aa"
-									onclick="sidebar('${n.id}','${n.url}')">${n.qname}</a>
+									onclick="sidebar('${n.id}','${n.url}','${n.js }','${n.parentid }')">${n.qname}</a>
 							</dd>
 						</c:if>
 					</c:forEach>

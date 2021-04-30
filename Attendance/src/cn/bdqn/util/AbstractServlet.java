@@ -34,7 +34,6 @@ public abstract class AbstractServlet extends HttpServlet {
 				 * getMethod():获取�??有共有的方法
 				 */
 				method = getServletClass().getDeclaredMethod(actionIndicator, HttpServletRequest.class, HttpServletResponse.class);
-				System.out.println(method);
 				result = method.invoke(this, req, resp);//反射机制调用方法，得到该方法的返回�??
 			}
 			toView(req, resp, result);
@@ -68,7 +67,6 @@ public abstract class AbstractServlet extends HttpServlet {
 				System.out.println("----------------viewName");
 				req.getRequestDispatcher(viewName).forward(req, resp);
 			} else {
-				System.out.println("----------------PrintUtil.write");
 				PrintUtil.write(result, resp);
 			}
 		}

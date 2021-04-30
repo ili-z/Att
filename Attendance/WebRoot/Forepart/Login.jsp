@@ -13,7 +13,7 @@
 			<div class="layui-input-block">
 				<input type="text" name="name" id="name" required
 					lay-verify="required" placeholder="请输入账号" autocomplete="off"
-					class="layui-input">
+					class="layui-input" value="zs">
 			</div>
 		</div>
 		<div class="layui-form-item">
@@ -21,7 +21,7 @@
 			<div class="layui-input-block">
 				<input type="password" name="pwd" id="pwd" required
 					lay-verify="required" placeholder="请输入密码" autocomplete="off"
-					class="layui-input">
+					class="layui-input" value="123">
 			</div>
 		</div>
 		<div class="layui-form-item">

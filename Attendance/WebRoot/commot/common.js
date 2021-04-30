@@ -1,15 +1,18 @@
 /* 主题内容页面 */
-function notempty(murl,id,uid,mjs) {
-	///LayuiExercise/BusinessLayer?action=seleUserAllHtml
+function sidebar(id,murl,mjs,parentid) {
+
+	alert(id+"/-----------------")
+	
 	var item = {
+			"parentid":parentid,
 			"murl" : murl,
 			"id" : id,
-			"uid" : uid,
 			"mjs" : mjs
 	}
 	$("#bodydiv").load(murl+"&id="+id + " #AllPermissions>*",item,function(){
+		alert(murl+"----"+id+"----"+mjs);
 		var sc =  document.createElement("script");
-		sc.src= "back/js/"+mjs;  //数据表格的js
+		sc.src= mjs;  //数据表格的js
 		$("body").append(sc);
 	})
 }
